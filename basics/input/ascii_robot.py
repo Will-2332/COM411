@@ -1,0 +1,6 @@
+print ("insert the eyes of the robot")
+eye = input()
+print("##########")
+print("#  "+eye+"  "+eye+"  #")
+print("#  ----  #")
+print("##########")
