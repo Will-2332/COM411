@@ -1,8 +1,8 @@
 #factorial
-import math
 n=int(input("insert your number \n"))
-print(math.factorial(n))
-t =0
-while n >= 1 :
-  t += n*(n-1)
+t =1
+c=0
+while c < n :
+  c += 1
+  t = t * c
 print("the result is {}".format(t))
