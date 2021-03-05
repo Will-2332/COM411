@@ -1,5 +1,5 @@
-msg = input("Type your message:\n")
-c = msg
-while msg != 0 :
-  msg -= 1
+msg = str(input("Type your message:\n"))
+c = len(msg)
+while c != 0 :
+  c -= 1
   print("boop")
