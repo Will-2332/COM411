@@ -1,13 +1,17 @@
 import random
 
-min=int(input("Please enter the minimum value:\n")
-max=int(input("Please enter the maximum value:\n")
-#I am thinking of a number between 1 and 10. Can you guess what it is?
-#2
-#Your guess is too low.
-#Try again:
-#9
-#Your guess is too high.
-#Try again:
-#5
-#Congratulations! You guessed my number!
+mini =int(input("Please enter the minimum value:\n"))
+maxi =  int(input("Please enter the maximum value:\n"))
+rnd = int(random.randrange(mini,maxi))
+
+print("I am thinking of a number between {} and {}. Can you guess what it is?".format(mini,maxi))
+n=int(input())
+
+while (n != rnd):
+  if (n < rnd):
+    print("too low")
+    n = int(input("again\n"))
+  elif (n > rnd):
+    print("too high")
+    n = int(input("again\n"))
+print("that's right!")
