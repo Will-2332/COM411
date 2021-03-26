@@ -1,13 +1,13 @@
-#import directions from iterate_list
+from iterate_list import directions
 #import menu from iterate_list
 
-def directions():
-  directions=[]
-  directions.append("Move Forward")
-  directions.append("Move Backward")
-  directions.append("Turn Left")
-  directions.append("Turn Right")
-  return directions
+#def directions():
+#  directions=[]
+#  directions.append("Move Forward")
+#  directions.append("Move Backward")
+#  directions.append("Turn Left")
+#  directions.append("Turn Right")
+#  return directions
 
 def menu():
   print("Please select a direction:")
@@ -24,5 +24,5 @@ def run():
     route.append(menu())
   print(route)
 
-
-run()
+if __name__ == "__main__":
+    run()
