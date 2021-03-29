@@ -7,7 +7,7 @@ def run() :
   bad=[]
   good=[]
   for likelihoods in allsteps:
-    if (likelihoods[1]) <= 50 :
+    if (likelihoods[1]) < 50 :
       good.append(likelihoods)
     else:
       bad.append(likelihoods)
