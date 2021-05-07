@@ -7,7 +7,7 @@ def data():
   colour_style=input("Which kind of colour would you like ? r,g or b ?")
   marker_style=input("Which kind of marker style would you like ? o, s or ^ ?")
   paths['line_style'] = line_style
-  paths['colour'] = colour
+  paths['colour'] = colour_style
   paths['marker_style'] = marker_style
   return paths
 
@@ -26,3 +26,5 @@ def run():
   print("running")
   generate()
   print("done")
+
+run()
